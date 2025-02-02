@@ -49,7 +49,7 @@ module clock_timer(
     
     //at this point we should have
     //inputs:
-            //ap
+            //ap - outut is onehzclock
             //select_switch
             //manual_pulse
             //hlt
@@ -59,14 +59,19 @@ module clock_timer(
             //output_lines[1]
             //output_lines[2]
             //clock8bit
-    // 0 and 1 go into a or gate, and then that output and line 2 go into an and gate for the findal clock8bit output
     
+    
+
+    //The Circuit
     assign output_lines[0] = onehzclock & select_switch;
     assign output_lines[1] = (~select_switch)& manual_pulse;
     assign output_lines[2] = ~hlt;
-    
-    
+    //Combination_line to output the Or of the first two output lines so it can then go into an and gate with output_lines[2] without causing a combinational loop for reassigning to the same output line twice. 
+    //So to be safe another wire is introduced. 
     wire combination_line = (output_lines[0]| output_lines[1]);
+
+
+    //final 8 bit clock for cpu clock signal depending on the state of the inputs. 
     assign clock8bit = combination_line & output_lines[2];
     
     
