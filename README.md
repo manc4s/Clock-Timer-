@@ -8,3 +8,8 @@ My code includes wires from the manual and astable inputs to two leds to show a 
 ## Circuit
 The circuit below displays the function of the clock timer and shows some of the pins tied to i/o's.
 ![image](https://github.com/user-attachments/assets/d8d8782a-4c97-44f6-bc71-41744eeb6562)
+
+
+## Elaborated Circuit, Vivado
+![image](https://github.com/user-attachments/assets/bc9b408a-b812-4ec7-81c8-822bebf9f432)
+
