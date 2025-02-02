@@ -1,4 +1,4 @@
-# Clock-Timer-
+# Clock-Timer
 Clock Timer for 8 Bit CPU.
 
 Clock timer circuit that has the capability to swap between an astable pulse and a manual pulse with a select switch, and a halt to stop button.
