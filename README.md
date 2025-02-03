@@ -13,3 +13,6 @@ The circuit below displays the function of the clock timer and shows some of the
 ## Elaborated Circuit, Vivado
 ![image](https://github.com/user-attachments/assets/bc9b408a-b812-4ec7-81c8-822bebf9f432)
 
+
+## Sources:
+https://www.youtube.com/watch?v=SmQ5K7UQPMM&list=PLowKtXNTBypGqImE405J2565dvjafglHU&index=6
